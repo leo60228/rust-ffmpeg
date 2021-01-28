@@ -1139,6 +1139,8 @@ impl From<AVCodecID> for Id {
             AV_CODEC_ID_HCA => Id::HCA,
             #[cfg(feature = "ffmpeg_4_3")]
             AV_CODEC_ID_EPG => Id::EPG,
+
+            _ => unimplemented!(),
         }
     }
 }
